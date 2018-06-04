@@ -1,0 +1,180 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  padding: 2px;
+}
+a:hover {
+  color: white;
+}
+
+/* body */
+body {
+  background-color: #282C2E;
+  font-family: 'Roboto', sans-serif;
+  color:#6D757C;
+  height: auto;
+}
+
+
+/* header: logo, search bar, upload */
+header {
+    background-color: white;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+  }
+
+/* youtube logo */
+.yt-logo {
+    width: 100px;
+    min-height: 70px;
+    text-align: center;
+    box-sizing:content-box;
+    float: left;
+  }
+
+.upload {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+
+#searchbar {
+    width: 600px;
+    text-align: center;
+  }
+
+
+/* left column and right column */
+.main {
+
+}
+
+/* left */
+.left {
+  position: relative;
+  margin: 110px 0 0 30px;
+  float:left;
+  width:20%;
+  text-align:left;
+  line-height: 2.5em;
+}
+
+.links {
+
+}
+
+
+h4 {
+  display: inline-block;
+  padding: 0 .5em 0;
+}
+
+.right {
+  position: relative;
+  margin-top: 110px;
+  float:left;
+  width:60%;
+  padding:0 20px 0 20px;
+}
+
+.video {
+  background-color: #1D2022;
+  background-image: url();
+  width: 100%;
+}
+
+.wingsuit {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.title {
+  background-color: #2B3134;
+  padding: .5em;
+  margin: 0;
+}
+
+.user-actions {
+  padding: 3px;
+  margin: 0;
+  border: .02px solid;
+  border-color: #2B3134;
+}
+
+ .user-actions > li {
+    display: inline-block;
+    margin: 1em 1em 1em 1em;
+}
+
+.comments {
+  background-color: white;
+  display: inline-block;
+  padding: 0 4em 0 4em;
+}
+
+h5 {
+  display: inline-block;
+  margin: 0 auto;
+  float: left;
+}
+
+.avatar {
+   float: left;
+   width: 9%;
+   height: 9%;
+   min-height: 50px;
+   min-width: 50px;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: red;
+
+}
+
+
+/* media query */
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+  /* header */
+
+  /* .guide */
+
+  /* .subscriptions */
+
+  /* .right */
+
+  /* .video */
+
+  /* .title */
+
+  /* .icons */
+
+  /* .comments */
