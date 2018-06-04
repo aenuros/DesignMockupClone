@@ -61,7 +61,7 @@ header {
 
 /* left column and right column */
 .main {
-
+margin-top: 0;
 }
 
 /* left */
@@ -86,7 +86,7 @@ h4 {
 
 .right {
   position: relative;
-  margin-top: 110px;
+  margin-top: 90px;
   float:left;
   width:60%;
   padding:0 20px 0 20px;
@@ -96,6 +96,8 @@ h4 {
   background-color: #1D2022;
   background-image: url();
   width: 100%;
+  padding: 60px 0 60px 0;
+  margin: 0;
 }
 
 .wingsuit {
@@ -158,7 +160,7 @@ footer {
 /* media query */
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width:800px) {
-  .left, .main, .right {
+  .header .left, .main, .right {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
