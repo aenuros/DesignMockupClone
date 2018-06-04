@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <title>YouTube Clone #2</title>
@@ -13,16 +13,16 @@
  <!-- logo, search bar, upload -->
 <header>
     <img class="yt-logo" src="https://venturebeat.com/wp-content/uploads/2017/08/youtube_logo_old_new1.gif?fit=578%2C289&strip=all" alt="youtube_logo" />
-      <i class="fa fa-search"></i>
-      <input id= "searchbar" type="text" name="searchbar">
+      <button type="submit"><i class="fa fa-search" style="font-size:30px;"></i></button>
+      <input id= "searchbar" type="text" placeholder="Search" name="search">
         <h4>Kenrick</h4>
-        <i class="fa fa-th" ></i>
+        <i class="fa fa-th" style="font-size:30px;"></i>
         <h3 class="upload">Upload</h3>
           <i class="fa fa-caret-down"></i>
 </header>
 
  <!-- main content -->
-<div class="main">
+<main>
   <!-- Sidebar -->
   <div class="left">
   <h4>Guide</h4>
@@ -74,7 +74,7 @@
       </li>
     </ul>
 
-  </div>
+  </main>
 <!-- Video -->
 <section class="right">
   <div class="video">
@@ -113,7 +113,8 @@
   <div class="comments">
   <section class="user">
     <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1Mtx-INbdQ5D3Xmsyq-D3HjpKmXnhKiqJsyzfNxzJ8gx-ewB" alt="mary-icon">
-      <h2>Mary Doe</h2> <h4>1 month ago</h4>
+      <h2>Mary Doe</h2>
+      <h4>1 month ago</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <div class="reaction">
             <h5>12</h5>

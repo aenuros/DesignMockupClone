@@ -23,6 +23,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color:#6D757C;
   height: auto;
+  overflow: auto;
 }
 
 
@@ -31,10 +32,10 @@ header {
     background-color: white;
     width: 100%;
     height: 70px;
-    margin-top: 0;
+    top: 0;
     padding: 0;
-    position: absolute;
     display: inline-block;
+    position: fixed;
   }
 
 /* youtube logo */
@@ -58,25 +59,25 @@ header {
     padding-top: 25px;
     text-align: center;
 }
-
+header > h4 {
+  text-align: right;
+}
 
 #searchbar {
     width: 50%;
-    height: auto;
-    text-align: center;
-
+    text-align: left;
+    height: 100%;
   }
 
-
 /* left column and right column */
-.main {
-margin-top: 0;
+main {
+  margin-top: 80px;
 }
 
 /* left */
 .left {
-  position: relative;
-  margin: 110px 0 0 30px;
+  position: static;
+  margin: 0 0 0 30px;
   float:left;
   width:200px;
   text-align:left;
@@ -84,18 +85,18 @@ margin-top: 0;
 }
 
 .links {
-
+/* in progress */
 }
 
 
 h4 {
   display: inline-block;
-margin: 0;
+  margin: 0;
 }
 
 .right {
-  position: relative;
-  margin-top: 80px;
+  position: static;
+  margin-top: 0;
   float:left;
   width:75%;
   padding:0 20px 0 20px;
@@ -137,9 +138,16 @@ margin: 0;
 .comments {
   background-color: white;
   display: inline-block;
-  padding: 0 4em 0 4em;
+  padding: 0 120px 0 120px;
 }
 
+p, h2 {
+  padding-left: 100px;
+}
+
+.user > h4 {
+  padding-left: 50px;
+}
 
 h5 {
   display: inline-block;
@@ -179,7 +187,7 @@ footer {
 
 /* media query */
 /* Use a media query to add a break point at 800px: */
-@media screen and (min-width:350px , max-width:768px) {
+@media screen and (min-width:350px , max-width:800px) {
    .main {
   }
 }
